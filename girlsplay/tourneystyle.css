@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Solway:wght@300;400;500;700;800&display=swap');
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.solway-light {
+  font-family: "Solway", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.solway-regular {
+  font-family: "Solway", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.solway-medium {
+  font-family: "Solway", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.solway-bold {
+  font-family: "Solway", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.solway-extrabold {
+  font-family: "Solway", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+*/
+*{
+    box-sizing: border-box;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "image info "  ;
+    border-bottom: solid 30px #000;
+}
+
+.info section:nth-of-type(1){
+    grid-area: image;
+}
+
+.info section:nth-of-type(2){
+    grid-area: info;
+}
+
+.info h2{
+  text-align: left;
+}
+
+.info h3{
+    font-family: "Solway", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.info p{
+    font-family: "Quicksand", sans-serif;
+   font-style: normal;
+  text-align: left;
+
+}
+
+.info ul{
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+
+.info ul a{
+    text-decoration: none;
+    color: #909090;
+
+}
+/*code gotten & modified from W3 Schools*/
+.registerbtn {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  cursor: pointer;
+  font-family: "Solway", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.registerbtn:hover {
+  background-color: #97fb57;
+    color: #000;
+}
+
+@media screen and (max-width: 560px){
+
+  .info{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "image"
+    "info";
+}
+  
+}

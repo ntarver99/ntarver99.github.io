@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Solway:wght@300;400;500;700;800&display=swap');
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.solway-light {
+  font-family: "Solway", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.solway-regular {
+  font-family: "Solway", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.solway-medium {
+  font-family: "Solway", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.solway-bold {
+  font-family: "Solway", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.solway-extrabold {
+  font-family: "Solway", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+*/
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title form" ;
+}
+
+main h2{
+    grid-area: title;
+}
+
+.container{
+    grid-area: form;
+}
+
+main h2{
+    font-family: "Solway", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center ;
+}
+
+main label{
+    font-family: "Solway", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* code copied and modified from W3 Schools*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #909090; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #909090; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Solway", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  input[type=submit]:hover {
+    background-color: #97fb57;
+    color: #000;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #909090;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 730px){
+    
+    main{
+      display: grid;
+      gap: 20px;
+      grid-template-areas: 
+        "title" 
+        "form" ;
+    }
+
+  }
