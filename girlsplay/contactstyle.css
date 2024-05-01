@@ -46,19 +46,12 @@
 }
 
 main {
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "title form" ;
-}
-
-main h2{
-    grid-area: title;
+  display: inline-block;
 }
 
 .container{
-    grid-area: form;
+  margin-left: 200px;
+  width: 500px;
 }
 
 main h2{
@@ -124,12 +117,10 @@ input[type=submit] {
 
   @media screen and (max-width: 730px){
     
-    main{
-      display: grid;
-      gap: 20px;
-      grid-template-areas: 
-        "title" 
-        "form" ;
+    .container{
+      margin-left: 50px;
+           width: 100%;
+
     }
 
   }
